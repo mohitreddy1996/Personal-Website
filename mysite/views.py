@@ -14,3 +14,7 @@ def generic_view(request):
 def error_message(request):
     return render(request, 'error_message.html', {})
 
+
+def projects_view(request):
+    return render(request, 'slideshow.html', {})
+

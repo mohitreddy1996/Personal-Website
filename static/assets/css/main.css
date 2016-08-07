@@ -4226,3 +4226,86 @@
 			}
 
 		}
+
+		p1 {
+		    text-transform: lowercase;
+		}
+
+		textHeading{
+		      font-family: 'AUdimat';
+              src: url('../fonts/AUdimat-Regular.woff');
+              src: url('../fonts/AUdimat-Regular.eot?#iefix') format('embedded-opentype'),
+                   url('../fonts/AUdimat-Regular.ttf') format('truetype'),
+              font-weight: normal;
+              font-style: normal;
+		}
+
+        /* For Profile Columns */
+
+        * {
+            box-sizing: border-box;
+        }
+
+		.col-1{width:33.33%;}
+		.col-2{width:33.33%;}
+		.col-3{width:33.33%}
+
+		[class*="col-"] {
+            float: left;
+            padding: 15px;
+
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .circularImage{
+            border-radius: 50%;
+            border:5px;
+            width:100%
+        }
+
+
+        /* Customized Heading style */
+        .heading_class{
+            display: block;
+            font-size: 48px;
+            margin-bottom: 0.67em;
+            margin-left: 0;
+            margin-right: 0;
+            color: #00FFCC;
+        }
+        .heading_class2{
+            display: block;
+            font-size: 24px;
+            margin-bottom: 0.2em;
+            margin-left: 0;
+            margin-right: 0;
+            color: #00FFCC;
+        }
+
+
+        .customised_hr {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border-style: inset;
+            border-width: 0.5px;
+            color: #00CCFF;
+            border-color: #00FFCC;
+            border-top: 1px solid #00FFCC;
+            opacity: .1;
+        }
+
+        .customised_para{
+            display: block;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 0;
+            margin-right: 0;
+        }
