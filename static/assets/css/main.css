@@ -4276,15 +4276,25 @@
             margin-bottom: 0.67em;
             margin-left: 0;
             margin-right: 0;
-            color: #00FFCC;
         }
+
         .heading_class2{
             display: block;
             font-size: 24px;
+            font-style: bold;
             margin-bottom: 0.2em;
             margin-left: 0;
             margin-right: 0;
-            color: #00FFCC;
+        }
+
+        .heading_class3{
+            display: block;
+            font-size: 36px;
+            font-style: bold;
+            margin-top: 0.5em;
+            margin-bottom: 0.2em;
+            margin-left: 0;
+            margin-right: 0;
         }
 
 
@@ -4299,7 +4309,21 @@
             color: #00CCFF;
             border-color: #00FFCC;
             border-top: 1px solid #00FFCC;
-            opacity: .1;
+            opacity: .2;
+        }
+
+        .customised_hr2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            margin-top:10px;
+            margin-bottom: 10px;
+            border-width: 0.5px;
+            color: #00CCFF;
+            border-color: #00FFCC;
+            border-top: 1px solid #00FFCC;
+            opacity: .2;
         }
 
         .customised_para{
@@ -4308,4 +4332,20 @@
             margin-bottom: 1em;
             margin-left: 0;
             margin-right: 0;
+        }
+
+        a, u {
+    text-decoration: none;
+}
+
+        .glanceContent{
+            color : #708090;
+            font-size  : 100%;
+
+        }
+
+        .quoteFont{
+            font-size : 36px;
+            font-family: "Arizonia";
+            font-style : italic;
         }

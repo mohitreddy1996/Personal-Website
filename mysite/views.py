@@ -16,5 +16,13 @@ def error_message(request):
 
 
 def projects_view(request):
-    return render(request, 'slideshow.html', {})
+    return render(request, 'generic.html', {})
+
+
+def experience_view(request):
+    return render(request, 'generic.html', {})
+
+
+def academics_view(request):
+    return render(request, 'generic.html', {})
 
