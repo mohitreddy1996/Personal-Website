@@ -16,7 +16,7 @@ def error_message(request):
 
 
 def projects_view(request):
-    return render(request, 'generic.html', {})
+    return render(request, 'projects.html', {})
 
 
 def experience_view(request):
