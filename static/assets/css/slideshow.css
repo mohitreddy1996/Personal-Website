@@ -3,6 +3,13 @@
   position: relative;
   overflow: hidden;
 }
+
+.diy-slideshow2{
+  margin-left: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
 figure{
   margin-left: 0px;
   position: absolute;
@@ -16,6 +23,37 @@ figure.show{
   position: static;
   transition: 1s opacity;
 }
+
+[class*="next"], [class*="prev"]{
+    color: #fff;
+    position: absolute;
+    background: rgba(0,0,0, .6);
+    top: 50%;
+    z-index: 1;
+    font-size: 2em;
+    opacity: 1.0;
+    user-select: none;
+}
+
+
+
+[class*="next"]{
+    left: 430px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+[class*="prev"]{
+    left: 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+[class*="next"]:hover, [class*="prev"]:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+/*
+
 .next, .prev{
   color: #fff;
   position: absolute;
@@ -26,6 +64,8 @@ figure.show{
   opacity: 1.0;
   user-select: none;
 }
+
+
 .next:hover, .prev:hover{
   cursor: pointer;
   opacity: 1;
@@ -40,3 +80,30 @@ figure.show{
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
+
+
+.next1, .prev1{
+  color: #fff;
+  position: absolute;
+  background: rgba(0,0,0, .6);
+  top: 50%;
+  z-index: 1;
+  font-size: 2em;
+  opacity: 1.0;
+  user-select: none;
+}
+.next1:hover, .prev1:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.next1{
+  left: 430px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.prev1{
+  left: 0px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+*/
