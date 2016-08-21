@@ -1,0 +1,17 @@
+#acad_area h4{
+    position: absolute;
+    align: left;
+}
+
+
+#acad_area img{
+    float: right;
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+}
+
+#acad_area h5,
+#acad_area p{
+    display: inline;
+}

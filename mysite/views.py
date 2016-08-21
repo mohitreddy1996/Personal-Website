@@ -24,5 +24,5 @@ def experience_view(request):
 
 
 def academics_view(request):
-    return render(request, 'generic.html', {})
+    return render(request, 'academics.html', {})
 
