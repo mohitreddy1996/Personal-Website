@@ -1969,6 +1969,14 @@
 		padding: 0.75em 1em;
 	}
 
+    .ac-container input{
+	display: none;
+}
+
+    input[type="checkbox"]{
+        display: none;
+    }
+
 	input[type="checkbox"],
 	input[type="radio"] {
 		-moz-appearance: none;
