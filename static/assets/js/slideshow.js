@@ -1,18 +1,21 @@
 (function(){
   
-var counter = 0, counter1 = 0, counter2 = 0, counter3 = 0, counter4 = 0, counter5 = 0;
+var counter = 0, counter1 = 0, counter2 = 0, counter3 = 0, counter4 = 0, counter5 = 0, counter6 = 0;
     $items = document.querySelectorAll('.diy-slideshow figure'),
     $items1 = document.querySelectorAll('.diy-slideshow2 figure'),
     $items2 = document.querySelectorAll('.diy-slideshow3 figure'),
     $items3 = document.querySelectorAll('.diy-slideshow4 figure'),
     $items4 = document.querySelectorAll('.diy-slideshow5 figure'),
     $items5 = document.querySelectorAll('.diy-slideshow6 figure'),
+    $items6 = document.querySelectorAll('.diy-slideshow7 figure'),
     numItems = $items.length;
     numItems1 = $items1.length;
     numItems2 = $items2.length;
     numItems3 = $items3.length;
     numItems4 = $items4.length;
     numItems5 = $items5.length;
+    numItems6 = $items6.length;
+
 
 var showCurrent = function(){
     var itemToShow = Math.abs(counter);
@@ -66,6 +69,16 @@ var showCurrent5 = function(){
     });
 
     $items5[itemToShow].classList.add('show');
+}
+
+
+var showCurrent6 = function(){
+    var itemToShow = Math.abs(counter6);
+    [].forEach.call( $items6, function(el){
+    el.classList.remove('show');
+    });
+
+    $items6[itemToShow].classList.add('show');
 }
 
 /*
@@ -157,6 +170,18 @@ document.querySelector('.prev5').addEventListener('click', function() {
      counter5--;
      counter5 = (counter5 + numItems5)%numItems5;
      showCurrent5();
+  }, false);
+
+  document.querySelector('.next6').addEventListener('click', function() {
+     counter6++;
+     counter6 = (counter6 + numItems6)%numItems6;
+     showCurrent6();
+  }, false);
+
+document.querySelector('.prev6').addEventListener('click', function() {
+     counter6--;
+     counter6 = (counter6 + numItems6)%numItems6;
+     showCurrent6();
   }, false);
   
 })();  

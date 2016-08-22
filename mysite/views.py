@@ -7,10 +7,6 @@ def home_screen(request):
     return render(request, 'index.html', {})
 
 
-def generic_view(request):
-    return render(request, 'generic.html', {})
-
-
 def error_message(request):
     return render(request, 'error_message.html', {})
 
@@ -20,7 +16,7 @@ def projects_view(request):
 
 
 def experience_view(request):
-    return render(request, 'generic.html', {})
+    return render(request, 'experience.html', {})
 
 
 def academics_view(request):

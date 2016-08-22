@@ -1,14 +1,9 @@
-.diy-slideshow{
+[class*="diy-slideshow"]{
   margin-left: 0px;
   position: relative;
   overflow: hidden;
 }
 
-.diy-slideshow2{
-  margin-left: 0px;
-  position: relative;
-  overflow: hidden;
-}
 
 figure{
   margin-left: 0px;

@@ -4357,3 +4357,13 @@
             font-family: "Arizonia";
             font-style : italic;
         }
+
+        .exp_heading{
+            display: block;
+            font-size: 20px;
+            margin-top: 1.33em;
+            margin-bottom: 1.33em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+        }
