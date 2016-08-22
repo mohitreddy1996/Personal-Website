@@ -49,7 +49,7 @@
 
                     <div class="experience">
                         <header>
-                            <h3>Summer Intern 2016 (May 2016 - July 2016).</h3>
+                            <h3>Software Engineering Intern (May 2016 - July 2016).</h3>
 
                         </header>
                         <div class="inner" style="margin-left: 40px;">
@@ -59,16 +59,24 @@
                             <img src="{% static 'images/bigclozet.jpg' %}" style="max-width: 300px; max-height: 300px; float: right; margin-right: 40px;">
 
                             <div class="exp_heading"> <a href="https://www.bigclozet.com/">Bigclozet, Bangalore, India.</a></div>
-                            <p>
-                                Developed multithreaded crawlers in Python to extract data from different E-Commerce websites. Integrated Apache Kafka producers and consumers in Python and JAVA for further data processing. Integrated Grafana with crawlers for metrics and statistics. Around 1 Million new items fetched.
-                                <br>
-                                Developed a Webservice using Node.js, Express, MongoDB and JAVA to fetch live prices of an item.
-                                <br>
-                                Developed REST APIs for supporting different functionalities on Website and Android Application using Node.js, Express and MongoDB.
-                                <br>
-                                Developed Webview supported with different functionalities in Android Application for better user experience.
-                                <br>
-                                Worked with Notification service for Android application and renovation of the Android Application.</p>
+                            <p><b>About the Organisation</b></p>
+                            <p>Bigclozet is a women fashion aggregator. Items from different E-Commerce websites are displayed at one single place. Addition to that many filters, other functionalities are available providing users more options to search.</p>
+                            <b>My work in 9 weeks.</b>
+                            <ul>
+                                <li>Developed crawlers to fetch items from different E-Commerce Websites. The crawlers were written in Python. Crawlers were made multi-threaded to increase the throughput. Backed up with kafka framework to decrease the load on the database server(MongoDB) as many operations used to perform read/write operations on MongoDB. Integrated Grafana to get better statistics of how the crawlers are running(how many new items crawled, for how many prices decreased). Integrated slack with the crawlers so that notifications come up when crawlers failed. Testing of crawlers took a lot of time. Catalogue size almost doubled. Crawlers fetched around 1 Million new items.</li>
+                                <li>The second task was to write a web service which fetches the live price for an item being viewed by the user. Prices on big E-Commerce websites are changed frequently. Wrote the service using Node.js, Express and using a java server. Item URL and Seller name were passed to backend which used to crawl the item page and fetch the live price. </li>
+                                <li>The third task was to write RESTful APIs in Node.js and MongoDB to support new functionalities being added to the website and android application.</li>
+                                <li>Developed Webview in the android application when the user wants to buy a particular item. Added multiple functionalities in webview to make the user interaction better.</li>
+                                <li>Worked on the notification service of the android application.</li>
+                                <li>Major contribution in renovation of the whole android application of the organization. </li>
+                            </ul>
+                            <b>Technical Skills learnt/used: </b>
+                            <br>
+                            <b>Languages: </b>JavaScript, Java, Python.
+                            <br>
+                            <b>Databases: </b>MongoDB
+                            <br>
+                            <b>Frameworks/Tools: </b>Apache Kafka, Grafana, Android Studio, Webstorm, PyCharm, IntelliJ, MongoChef.
 
                         </div>
 
