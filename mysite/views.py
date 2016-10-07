@@ -1,10 +1,17 @@
 from django.shortcuts import render
 from django.template.context_processors import csrf
+from models import Message
 import os
 
 
 def home_screen(request):
-    return render(request, 'index.html', {})
+    context = {}
+    if 'submit' in request.POST:
+        msge = Message(name=request.POST['name'], email=request.POST['email'], message=request.POST['message'])
+        msge.save()
+        context.update({'message': 'Successfully Saved', 'messagetype': 'success'})
+    context.update(csrf(request))
+    return render(request, 'index.html', context)
 
 
 def error_message(request):
