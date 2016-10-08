@@ -1,39 +1,16 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		{% load staticfiles %}
-		<title>Academics</title>
-        <link rel="icon" href="{% static 'images/title_image_48x48.jpg' %}">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="{% static 'assets/js/ie/html5shiv.js' %}"></script><![endif]-->
-		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="{% static 'assets/css/academics.css' %}">
-		<!--[if lte IE 8]><link rel="stylesheet" href="{% static 'assets/css/ie8.css' %}" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="{% static 'assets/css/ie9.css' %}" /><![endif]-->
-	</head>
-	<body>
 
-		<!-- Header -->
-			<header id="header">
-				<h1><a href="/">Mohit Reddy</a></h1>
-				<a href="#nav">Menu</a>
-			</header>
+{% extends "base.html"%}
+{% load staticfiles %}
+{%block title%}Academics{%endblock%}
+{%block script%}{%endblock%}
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="links">
-					<li><a href="/">Home</a></li>
-					<li><a href="/projects/">Projects</a></li>
-					<li><a href="/experience/">Experience</a></li>
-					<li><a href="/academics/">Academics</a></li>
-					<li><a href="https://drive.google.com/file/d/0B8c0Bnt30GX0RC1BQm5YTURBVTQ/view?usp=sharing" target="_blank">Resume</a></li>
-					<li><a href="/#contact_me">Contact Me</a></li>
-				</ul>
-			</nav>
+{%block header%}
+<header id="header">
+    <h1><a href="/">Mohit Reddy</a></h1>
+    <a href="#nav">Menu</a>
+</header>{%endblock%}
 
-		<!-- Main -->
+{%block content%}
 			<section id="main" class="wrapper">
 				<div class="container">
 
@@ -184,45 +161,4 @@
 				</div>
 			</section>
 
-
-
-
-
-
-
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-                        <li><a href="https://www.facebook.com/mohit.reddy.5" class="icon fa-facebook" target="_blank">
-                            <span class="label">Facebook</span>
-                        </a></li>
-                        <li><a href='mailto:mohitreddy1996@gmail.com' class="icon fa-google" target="_blank">
-                            <span class="label">Gmail</span>
-                        </a></li>
-                        <li><a href="https://github.com/mohitreddy1996" class="icon fa-github" target="_blank">
-                            <span class="label">Github</span>
-                        </a></li>
-                        <li><a href="https://linkedin.com/in/mohitreddy1996" class="icon fa-linkedin" target="_blank">
-                            <span class="label">LinkedIn</span>
-                        </a></li>
-					</ul>
-                    <ul class="copyright">
- 						<li>&copy; 2016, Mohit Reddy</li>
- 						<li>Images: <a href="http://unsplash.com">Unsplash</a>.</li>
- 						<li>Design: <a href="http://templated.co">TEMPLATED</a>.</li>
- 					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
-			<script src="{% static 'assets/js/skel.min.js' %}"></script>
-			<script src="{% static 'assets/js/util.js' %}"></script>
-			<!--[if lte IE 8]><script src="{% static 'assets/js/ie/respond.min.js' %}"></script><![endif]-->
-			<script src="{% static 'assets/js/main.js' %}"></script>
-            <script src="{% static 'assets/js/accordion.js' %}"></script>
-
-	</body>
-</html>
+{%endblock%}

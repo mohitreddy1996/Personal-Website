@@ -1,124 +1,64 @@
-<!DOCTYPE HTML>
-<!--
-	Retrospect by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
-	<head>
-		{% load staticfiles %}
-		<title>Experience</title>
-        <link rel="icon" href="{% static 'images/title_image_48x48.jpg' %}">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="{% static 'assets/js/ie/html5shiv.js' %}"></script><![endif]-->
-		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<!--[if lte IE 8]><link rel="stylesheet" href="{% static 'assets/css/ie8.css' %}" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="{% static 'assets/css/ie9.css' %}" /><![endif]-->
-	</head>
-	<body>
 
-		<!-- Header -->
-			<header id="header">
-				<h1><a href="/">Mohit Reddy</a></h1>
-				<a href="#nav">Menu</a>
-			</header>
+{% extends "base.html"%}
+{% load staticfiles %}
+{%block title%}Experience{%endblock%}
+{%block script%}{%endblock%}
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="links">
-					<li><a href="/">Home</a></li>
-					<li><a href="/projects/">Projects</a></li>
-					<li><a href="/experience/">Experience</a></li>
-					<li><a href="/academics/">Academics</a></li>
-					<li><a href="https://drive.google.com/file/d/0B8c0Bnt30GX0RC1BQm5YTURBVTQ/view?usp=sharing" target="_blank">Resume</a></li>
-					<li><a href="/#contact_me">Contact Me</a></li>
-				</ul>
-			</nav>
+{%block header%}
+<header id="header">
+    <h1><a href="/">Mohit Reddy</a></h1>
+    <a href="#nav">Menu</a>
+</header>{%endblock%}
 
+{%block content%}
 		<!-- Main -->
-			<section id="main" class="wrapper">
-				<div class="container">
+<section id="main" class="wrapper">
+    <div class="container">
 
 
-					<header class="major special">
-						<h2>Professional Experience</h2>
-					</header>
+        <header class="major special">
+            <h2>Professional Experience</h2>
+        </header>
 
-					<hr class="style-seven">
-
-
-                    <div class="experience1">
-                        <header>
-                            <h3>Software Engineering Intern (May 2016 - July 2016).</h3>
-
-                        </header>
-                        <div class="inner" style="margin-left: 40px;">
+        <hr class="style-seven">
 
 
+        <div class="experience1">
+            <header>
+                <h3>Software Engineering Intern (May 2016 - July 2016).</h3>
 
-                            <img src="{% static 'images/bigclozet.jpg' %}" style="max-width: 300px; max-height: 300px; float: right; margin-right: 40px;">
+            </header>
+            <div class="inner" style="margin-left: 40px;">
 
-                            <div class="exp_heading"> <a href="https://www.bigclozet.com/">Bigclozet, Bangalore, India.</a></div>
-                            <p><b>About the Organisation</b></p>
-                            <p>Bigclozet is a women fashion aggregator. Items from different E-Commerce websites are displayed on a single platform.</p>
-                            <b>My work in 9 weeks.</b>
-                            <ul>
-                                <li>Developed multi-threaded crawlers in Python to fetch items from different E-Commerce Websites. Crawlers integrated with kafka framework Producer-Consumer Clients. Integrated Grafana to get better metrics and statistics. Crawlers further improved to update the prices of the items already present in the database. Integrated slack with the crawlers to get notifications regarding crawlers. Testing of crawlers took a lot of time. Catalogue size almost doubled. Crawlers fetched around 1 Million new items.</li>
-                                <li>The second task was to write a web service which fetches the live price for an item being viewed by the user. Prices on big E-Commerce websites are changed frequently. Developed a webservice using Node.js, Express and using a java server. Item URL and Seller name were passed to backend which were used to crawl the item page and fetch the live price. </li>
-                                <li>The third task was to write RESTful APIs in Node.js and MongoDB to support various functionalities being added to the website and android application.</li>
-                                <li>Developed Webview in the android application when the user wants to buy a particular item. Added multiple functionalities in webview to make the user interaction better.</li>
-                                <li>Worked on the notification service of the android application. Notifications sent to users notifying them regarding change of price or in-stock information.</li>
-                                <li>Major contribution in renovation of the android application for the organization. </li>
-                            </ul>
-                            <b>Technical Skills learnt/used: </b>
-                            <br>
-                            <b>Languages: </b>JavaScript, Java, Python.
-                            <br>
-                            <b>Databases: </b>MongoDB
-                            <br>
-                            <b>Frameworks/Tools: </b>Apache Kafka, Grafana, Android Studio, Webstorm, PyCharm, IntelliJ IDEA, MongoChef.
 
-                        </div>
 
-                    </div>
-                    <br>
-                    <hr class="style-seven">
-				</div>
-			</section>
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-                        <li><a href="https://www.facebook.com/mohit.reddy.5" class="icon fa-facebook" target="_blank">
-                            <span class="label">Facebook</span>
-                        </a></li>
-                        <li><a href='mailto:mohitreddy1996@gmail.com' class="icon fa-google" target="_blank">
-                            <span class="label">Gmail</span>
-                        </a></li>
-                        <li><a href="https://github.com/mohitreddy1996" class="icon fa-github" target="_blank">
-                            <span class="label">Github</span>
-                        </a></li>
-                        <li><a href="https://linkedin.com/in/mohitreddy1996" class="icon fa-linkedin" target="_blank">
-                            <span class="label">LinkedIn</span>
-                        </a></li>
-					</ul>
-					<ul class="copyright">
- 						<li>&copy; 2016, Mohit Reddy</li>
- 						<li>Images: <a href="http://unsplash.com">Unsplash</a>.</li>
- 						<li>Design: <a href="http://templated.co">TEMPLATED</a>.</li>
- 					</ul>
-				</div>
-			</footer>
+                <img src="{% static 'images/bigclozet.jpg' %}" style="max-width: 300px; max-height: 300px; float: right; margin-right: 40px;">
 
-		<!-- Scripts -->
-			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
-			<script src="{% static 'assets/js/skel.min.js' %}"></script>
-			<script src="{% static 'assets/js/util.js' %}"></script>
-			<!--[if lte IE 8]><script src="{% static 'assets/js/ie/respond.min.js' %}"></script><![endif]-->
-			<script src="{% static 'assets/js/main.js' %}"></script>
-            <script src="{% static 'assets/js/accordion.js' %}"></script>
+                <div class="exp_heading"> <a href="https://www.bigclozet.com/">Bigclozet, Bangalore, India.</a></div>
+                <p><b>About the Organisation</b></p>
+                <p>Bigclozet is a women fashion aggregator. Items from different E-Commerce websites are displayed on a single platform.</p>
+                <b>My work in 9 weeks.</b>
+                <ul>
+                    <li>Developed multi-threaded crawlers in Python to fetch items from different E-Commerce Websites. Crawlers integrated with kafka framework Producer-Consumer Clients. Integrated Grafana to get better metrics and statistics. Crawlers further improved to update the prices of the items already present in the database. Integrated slack with the crawlers to get notifications regarding crawlers. Testing of crawlers took a lot of time. Catalogue size almost doubled. Crawlers fetched around 1 Million new items.</li>
+                    <li>The second task was to write a web service which fetches the live price for an item being viewed by the user. Prices on big E-Commerce websites are changed frequently. Developed a webservice using Node.js, Express and using a java server. Item URL and Seller name were passed to backend which were used to crawl the item page and fetch the live price. </li>
+                    <li>The third task was to write RESTful APIs in Node.js and MongoDB to support various functionalities being added to the website and android application.</li>
+                    <li>Developed Webview in the android application when the user wants to buy a particular item. Added multiple functionalities in webview to make the user interaction better.</li>
+                    <li>Worked on the notification service of the android application. Notifications sent to users notifying them regarding change of price or in-stock information.</li>
+                    <li>Major contribution in renovation of the android application for the organization. </li>
+                </ul>
+                <b>Technical Skills learnt/used: </b>
+                <br>
+                <b>Languages: </b>JavaScript, Java, Python.
+                <br>
+                <b>Databases: </b>MongoDB
+                <br>
+                <b>Frameworks/Tools: </b>Apache Kafka, Grafana, Android Studio, Webstorm, PyCharm, IntelliJ IDEA, MongoChef.
 
-	</body>
-</html>
+            </div>
+
+        </div>
+        <br>
+        <hr class="style-seven">
+    </div>
+</section>
+{%endblock%}
