@@ -19,8 +19,44 @@
         <header class="major special">
             <h2>Professional Experience</h2>
         </header>
+        <hr class="style-seven">
+
+        <div class="experience2">
+            <header>
+                <h3>
+                    SoftWare Engineering and Research Intern (29 November 2016 - 25 December 2016).
+                </h3>
+            </header>
+
+            <div class="inner" style="margin-left: 40px;">
+                <img src="{% static 'images/bigclozet.jpg' %}" style="max-width: 300px; max-height: 300px; float: right; margin-right: 40px;">
+
+                <div class="exp_heading">
+                    <a href="https://www.bigclozet.com/">Biclozet, Bangalore, India.</a>
+                </div>
+                <p><b>About the Organisation</b></p>
+                <p>Bigclozet is a women fashion aggregator. Items from different E-Commerce websites are displayed on a single platform.</p>
+                <b>My work in 4 weeks.</b>
+                <ul>
+                    <li>
+                        Implemented Edge detection and face detection algorithms in Python using OpenCV2 to detect foreground
+                        in images to maintain consistency (Aligning the foreground in the centre of the image) among images. Major reason
+                        for the project was to decrease the loading time of the items on the website and android. Images previously were larger
+                        in size (60-120Kb), were majorly in png format, images among different sellers had different consistency.
+                    </li>
+                    <li>
+                        Designed and Implemented a recommendation system using JAVA. Major part of the project was to build a user profile, using which recommendations
+                        will be given. User Profile was further planned to use for personal feed and notifications for a particular user.
+                        Project required a knowledge about recommendation algorithms. Good amount of project was dedicated to reading different papers by organizations
+                        like Netflix, Amazon, Spotify etc and comparing their algorithms.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
 
         <hr class="style-seven">
+
 
 
         <div class="experience1">
@@ -39,9 +75,9 @@
                 <p>Bigclozet is a women fashion aggregator. Items from different E-Commerce websites are displayed on a single platform.</p>
                 <b>My work in 9 weeks.</b>
                 <ul>
-                    <li>Developed multi-threaded crawlers in Python to fetch items from different E-Commerce Websites. Crawlers integrated with kafka framework Producer-Consumer Clients. Integrated Grafana to get better metrics and statistics. Crawlers further improved to update the prices of the items already present in the database. Integrated slack with the crawlers to get notifications regarding crawlers. Testing of crawlers took a lot of time. Catalogue size almost doubled. Crawlers fetched around 1 Million new items.</li>
-                    <li>The second task was to write a web service which fetches the live price for an item being viewed by the user. Prices on big E-Commerce websites are changed frequently. Developed a webservice using Node.js, Express and using a java server. Item URL and Seller name were passed to backend which were used to crawl the item page and fetch the live price. </li>
-                    <li>The third task was to write RESTful APIs in Node.js and MongoDB to support various functionalities being added to the website and android application.</li>
+                    <li>Developed multi-threaded crawlers in Python to fetch items from different E-Commerce Websites. Crawlers integrated with kafka framework Producer-Consumer Clients. A real time data pipeline framework was required so that new items across sellers should be updated. Integrated Grafana to get better metrics and statistics. Crawlers further improved to update the prices of the items already present in the database. Integrated slack with the crawlers to get notifications regarding crawlers. Testing of crawlers took a lot of time. Catalogue size almost doubled. Crawlers fetched around 1 Million new items.</li>
+                    <li>The second task was to write a web service which fetches the live price for an item being viewed by the user. Prices on big E-Commerce websites are changed frequently. Developed a webservice using JAVA. Integrated the service with the website using Node.JS and Express. Crawlers written in JAVA to fetch the live price for requested items. MultiThreaded Crawlers to support multiple calls to service. </li>
+                    <li>The third project was to write RESTful APIs in Node.js and MongoDB to support various functionalities being added to the website and android application.</li>
                     <li>Developed Webview in the android application when the user wants to buy a particular item. Added multiple functionalities in webview to make the user interaction better.</li>
                     <li>Worked on the notification service of the android application. Notifications sent to users notifying them regarding change of price or in-stock information.</li>
                     <li>Major contribution in renovation of the android application for the organization. </li>
