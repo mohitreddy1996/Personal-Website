@@ -14,6 +14,10 @@ def home_screen(request):
     return render(request, 'index.html', context)
 
 
+def blog_view (request):
+    return render(request, 'blog.html', {})
+
+
 def error_message(request):
     return render(request, 'error_message.html', {})
 

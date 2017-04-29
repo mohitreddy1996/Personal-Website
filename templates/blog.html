@@ -1,0 +1,79 @@
+
+{% extends "base.html"%}
+{% load staticfiles %}
+{%block title%}Blog | mohitreddy1996{%endblock%}
+{%block script%}{%endblock%}
+
+
+{%block content%}
+<!-- Main -->
+<section id="main" class="wrapper">
+    <div class="container">
+
+
+        <header class="major special">
+            <h2><div style="text-transform: lowercase; display: inline; margin-right: 5px;"> &nbsp;mohitreddy1996's</div>Blog</h2>
+            <h3>A blog about Work, Life and Everything which connects them.</h3>
+        </header>
+
+        <header class="major special">
+            <h4><u>Internship Interview Experiences (Summer '16 & Summer '17)</u></h4>
+        </header>
+
+        <div class="row" style="margin-left: 10%; margin-right: 10%;">
+            <div style="width: 50%; float: left;">
+                <div class="card">
+                    <img class="card-img-top" src="{%static 'images/Google.gif' %}" alt="Card image cap" height="200px">
+                    <div class="card-block">
+                        <h4 class="card-title">Google Interview Experience</h4>
+                        <p class="card-text">My thoughts on the Google Internship Interviews, Host Matching Interviews and more.</p>
+                        <a href="#" class="btn btn-primary">Read About It!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: 50%; float: right;">
+                <div class="card">
+                    <img class="card-img-top" src="{%static 'images/Microsoft.png' %}" alt="Card image cap" height="200px">
+                    <div class="card-block">
+                        <h4 class="card-title">Microsoft Interview Experience</h4>
+                        <p class="card-text">My thoughts on the Microsoft Internship Interviews and more.</p>
+                        <a href="#" class="btn btn-primary">Read About It!</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+
+
+        <div class="row" style="margin-left: 10%; margin-right: 10%;">
+            <div style="width: 50%; float: left;">
+                <div class="card">
+                    <img class="card-img-top" src="{%static 'images/bigclozet.jpg' %}" alt="Card image cap" height="200px" style="margin-left: 70px; margin-right: 70px;">
+                    <div class="card-block">
+                        <h4 class="card-title">Bigclozet Interview Experience</h4>
+                        <p class="card-text">My Interview and Working Experience as a Intern at Bigclozet during Summer 2016.</p>
+                        <a href="#" class="btn btn-primary">Read About It!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: 50%; float: right;">
+                <div class="card">
+                    <img class="card-img-top" src="{%static 'images/IITBombay.jpg' %}" alt="Card image cap" height="200px" style="margin-left: 50px; margin-right: 50px;">
+                    <div class="card-block">
+                        <h4 class="card-title">IIT Bombay Ekalavya Program</h4>
+                        <p class="card-text">How I got the Internship Offer from IIT Bombay Ekalavya Program for Summer 2016.</p>
+                        <a href="#" class="btn btn-primary">Read About It!</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+{%endblock%}

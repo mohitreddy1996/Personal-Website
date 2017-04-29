@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^$', views.home_screen),
     url(r'^home/$', views.home_screen),
     url(r'^projects/$', views.projects_view),
+    url(r'^blog/$', views.blog_view),
     url(r'^experience/$', views.experience_view),
     url(r'^academics/$', views.academics_view),
     url(r'^.*$', views.error_message),
