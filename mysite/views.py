@@ -33,3 +33,19 @@ def experience_view(request):
 def academics_view(request):
     return render(request, 'academics.html', {})
 
+
+def google_blog_view(request):
+    return render(request, 'google-blog.html', {})
+
+
+def microsoft_blog_view(request):
+    return render(request, 'microsoft-blog.html', {})
+
+
+def bigclozet_blog_view(request):
+    return render(request, 'bigclozet-blog.html', {})
+
+
+def iitbombay_blog_view(request):
+    return render(request, 'iitbombay-blog.html', {})
+
