@@ -1,10 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-</body>
-</html>
+{% extends "base.html"%}
+{% load staticfiles %}
+{%block title%}Blog | mohitreddy1996{%endblock%}
+{%block script%}{%endblock%}
+
+
+{%block content%}
+<!-- Main -->
+<section id="main" class="wrapper">
+    <div class="container">
+        <header class="major special">
+            <h3>Google Internship 2017: Interview Experience</h3>
+        </header>
+        <img src="{% static '/images/Google.gif' %}" style="width: 80%; height: auto; align: center;">
+
+        <div class="container" style="margin-left:">
+            <h4>
+                Application form
+            </h4>
+
+            <!-- Change font, sharpness and color if required -->
+            <div style="font-size: 18px; font-color: #FFFFFF;">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <h4>
+                Technical Interviews
+            </h4>
+        </div>
+
+        <div class="container">
+            <h4>
+                Interview Feedback and Results
+            </h4>
+        </div>
+
+        <div class="container">
+            <h4>
+                Host Matching Interview
+            </h4>
+        </div>
+
+        <div class="container">
+            <h4>
+                Offer Letter
+            </h4>
+        </div>
+
+    </div>
+</section>
+{%endblock%}

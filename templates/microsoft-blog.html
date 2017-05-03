@@ -1,10 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-</body>
-</html>
+{% extends "base.html"%}
+{% load staticfiles %}
+{%block title%}Blog | mohitreddy1996{%endblock%}
+{%block script%}{%endblock%}
+
+
+{%block content%}
+<!-- Main -->
+<section id="main" class="wrapper">
+    <div class="container">
+        <header class="major special">
+            <h3>Microsoft Internship 2017: Interview Experience</h3>
+        </header>
+        
+        <img src="{% static '/images/Microsoft.png' %}">
+        
+        <div class="container" style="margin-left:">
+            <!-- Change font, sharpness and color if required -->
+            <div style="font-size: 18px; font-color: #FFFFFF;">
+                I received Offer from Microsoft to intern at Microsoft IDC, Hyderabad. Microsoft visits our campus every
+                on day 0. They are the first company to offer internships at my college. They kept a cut off of 7.0 GPA
+                 and only students from Computer Science and Engineering (CSE) and Information Technology (IT) were allowed
+                for internships.
+            </div>
+        </div>
+
+        <div class="container">
+            <h4>
+                Online Coding Test
+            </h4>
+            <div style="font-size: 18px; font-color: #FFFFFF;">
+                People who cleared the cut offs had to go through a Coding test. Coding round consisted of 3 Algorithms
+                and Data structure problems. We were supposed to code in an IDE (forgot the name) where no other libraries
+                like Standard Template library (STL) could be used and only C and C++ were allowed programming languages.
+                All the questions were very easy questions.
+
+                First question was a basic Implementation question. A brute force solution passed.
+
+                Second question was an algorithmic question. The question gave large inputs and we had to return the product of them in an array.
+
+                // Give a code snippet for the same.
+
+                Third question was a Data Structures question. Given the root of a Binary Tree (whose structure was already
+                given), we need to return true or false depending on whether the Binary Tree is a balanced Binary Search
+                Tree or not.
+
+                // Give a code snippet for the same.
+
+                I solved all the questions with in 25 minutes.
+            </div>
+        </div>
+
+        <div class="container">
+            <h4>
+                Paper Coding round
+            </h4>
+            <div style="font-size: 18px; font-color: #FFFFFF;">
+                Many student who had solved 2 questions sorted by time were shortlisted for a Paper Coding round.
+                Students who came first and second in the Online coding round were given pass to directly interview without
+                the need for a Paper Coding round. I was ranked 1 in the Online coding round and so I could skip the Paper Coding round.
+
+                Even though I skipped the Paper coding round, I was curious to know the questions they asked in the Paper
+                Coding round. They had asked 2 questions. One of the was a Algorithms Problem where a sorted array was given as input
+                and we need to print all the pairs whose sum is X (again given as input). Second problem was a testing Problem
+                where given a problem statement, how would one provide test cases to check the correctness.
+
+                Microsoft people were very strict about the first problem. They considered both Time complexity and Memory
+                complexity and also the coding style for shortlisting students. Students who gave a O(n) Time complexity and
+                O(n) Memory complexity (Hash maps) solution were rejected. Second problem being an open ended problem, I didn't
+                come across anyone who gave the best solution for the first problem but gave only few test cases for the second.
+            </div>
+        </div>
+        <div class="container">
+            <h4>
+                Technical Interviews
+            </h4>
+
+            <div style="font-size: 18px; font-color: #FFFFFF;">
+                Performing the best in the Online round had both advantages and disadvantages. Advantage: I get to sit for
+                interview without giving a Paper coding round. Disadvantage: I was the first person to go for the interviews
+                in that placements session. My interview was scheduled at 7:30 AM. I got up at 6:45 AM took bath and went for the interview
+                wearing a semi formal Shirt, Jeans pant and Sport Shoes :P . Microsoft is not very strict about dressing.
+
+                My first Interview was one of the core members of Microsoft IDC. He asked me about my interests, my past experiences
+                and past projects. I told him about my Internship and how I took my many responsibilities during the internship
+                and about my interest in Databases, Backend and Infrastructure Programming and my past experiences in each of them.
+                So he gave an open ended Design problem. The problem statement was to design a server which should handle multiple clients
+                at once and should handle multiple updates which could be on the same entity and it should be notified to all the clients
+                before any further update happens. He offered me a pen and a paper. I took couple of minutes to think of an approach
+                and while I was thinking, I was discussing about the same with him. He stopped me to ask few questions in between like
+                which tool according to you could be the best for that step or what if some user updates it around the same time etc.
+                I confidently gave all the answers. He looked impressed and shook my hand after he told me that I would be having my
+                interview in 2 minutes. I went outside of the cabin and I was called by a member of the recruitment team in another cabin.
+
+
+                My second interview was more of a DSA interview. My interviewer was a member of Bing team and was working for more than 10 years
+                in that team. My first question was to find the middle element of a Linked List given the head of the Linked List. I told my interviewer
+                that I had come across the same problem before. I gave him the brute force approach to find the number of nodes in the Linked List
+                and then iterate to Length/2. Then gave the solution with single traversal. Before implementing the solution, I gave him the corner cases
+                and he was Impressed by my approach. I implemented my solution. He wanted a code walk-through of my solution. After that
+                he asked me few questions on Threads vs Process. Synchronization and other few Operating Systems Concepts. He was really Impressed at the end.
+
+            </div>
+        </div>
+
+        <div class="container">
+            <h4>
+                Results
+            </h4>
+
+            <div style="font-size: 18px; font-color: #FFFFFF;">
+                I was pretty confident about my interviews, but sometime in the afternoon some people were called by mistake and were told that
+                they would be having their third Interview round. It was by mistake and those students were sent back, but I didn't knew about this
+                situation and was sad thinking I didn't make it through for the Third round of interviews.
+
+                At around 5:00 pm, Results were declared and my name was on top of the Selected Intern list. I was called to the training and placement
+                building of my college. Microsoft gave goodies for the selected interns. I was very happy after the results were announced.
+
+            </div>
+        </div>
+
+    </div>
+</section>
+{%endblock%}
